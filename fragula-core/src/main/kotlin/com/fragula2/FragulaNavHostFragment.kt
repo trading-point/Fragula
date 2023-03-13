@@ -25,7 +25,7 @@ class FragulaNavHostFragment : NavHostFragment() {
         super.onInflate(context, attrs, savedInstanceState)
         context.obtainStyledAttributes(attrs, R.styleable.FragulaNavHostFragment).use { array ->
             swipeDirection = SwipeDirection.find(
-                array.getInteger(R.styleable.FragulaNavHostFragment_swipeDirection, 0),
+                array.getInteger(R.styleable.FragulaNavHostFragment_frSwipeDirection, 0),
             )
         }
     }
